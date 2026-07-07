@@ -10,7 +10,10 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.chatgpt.com") ||
 
         host == "chat.openai.com" ||
-        shExpMatch(host, "*.openai.com")
+        shExpMatch(host, "*.openai.com") ||
+
+        host == "plex.tv" ||
+        shExpMatch(host, "*.plex.tv")
     ) {
         return "PROXY 185.227.145.98:2986";
     }
