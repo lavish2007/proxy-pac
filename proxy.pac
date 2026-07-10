@@ -21,7 +21,10 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.gemini.google.com") ||
 
         host == "ai.google.dev" ||
-        shExpMatch(host, "*.ai.google.dev")
+        shExpMatch(host, "*.ai.google.dev") ||
+
+        host == "docs.google.com" ||
+        shExpMatch(host, "*.docs.google.com")
     ) {
         return "PROXY 185.227.145.98:2986";
     }
