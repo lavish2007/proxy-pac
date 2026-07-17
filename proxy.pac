@@ -26,7 +26,7 @@ function FindProxyForURL(url, host) {
         host == "docs.google.com" ||
         shExpMatch(host, "*.docs.google.com")
     ) {
-        return "PROXY 156.241.43.192:63994";
+        return "PROXY 185.227.145.98:2986";
     }
 
     return "DIRECT";
