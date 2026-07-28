@@ -29,7 +29,6 @@ function FindProxyForURL(url, host) {
         host == "chat.deepseek.com" ||
         shExpMatch(host, "*.chat.deepseek.com")
         shExpMatch(host, "*.deepseek.com")
-
     ) {
         return "PROXY 185.227.145.98:2986";
     }
