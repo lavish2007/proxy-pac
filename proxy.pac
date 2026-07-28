@@ -24,10 +24,10 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.ai.google.dev") ||
 
         host == "docs.google.com" ||
-        shExpMatch(host, "*.docs.google.com")
+        shExpMatch(host, "*.docs.google.com") ||
 
         host == "chat.deepseek.com" ||
-        shExpMatch(host, "*.chat.deepseek.com")
+        shExpMatch(host, "*.chat.deepseek.com") ||
         shExpMatch(host, "*.deepseek.com")
     ) {
         return "PROXY 185.227.145.98:2986";
