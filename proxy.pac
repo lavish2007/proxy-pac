@@ -28,7 +28,14 @@ function FindProxyForURL(url, host) {
 
         host == "chat.deepseek.com" ||
         shExpMatch(host, "*.chat.deepseek.com") ||
-        shExpMatch(host, "*.deepseek.com")
+        shExpMatch(host, "*.deepseek.com") ||
+
+        host == "notion.com" ||
+        shExpMatch(host, "*.notion.com") ||
+        host == "notion.so" ||
+        shExpMatch(host, "*.notion.so") ||
+        host == "notion.site" ||
+        shExpMatch(host, "*.notion.site")
     ) {
         return "PROXY 185.227.145.98:2986";
     }
