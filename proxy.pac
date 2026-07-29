@@ -35,7 +35,10 @@ function FindProxyForURL(url, host) {
         host == "notion.so" ||
         shExpMatch(host, "*.notion.so") ||
         host == "notion.site" ||
-        shExpMatch(host, "*.notion.site")
+        shExpMatch(host, "*.notion.site") ||
+
+        host == "bafista.ru" ||
+        shExpMatch(host, "*.bafista.ru")
     ) {
         return "PROXY 185.227.145.98:2986";
     }
