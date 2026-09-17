@@ -15,7 +15,7 @@ function FindProxyForURL(url, host) {
 
         host == "notebook.google.com" ||
         host == "notebook.google" ||
-        shExpMatch(host, "*.notebooklm.google.com") ||
+        shExpMatch(host, "*.notebook.google.com") ||
 
         host == "gemini.google.com" ||
         shExpMatch(host, "*.gemini.google.com") ||
