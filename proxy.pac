@@ -13,8 +13,8 @@ function FindProxyForURL(url, host) {
         host == "plex.tv" ||
         shExpMatch(host, "*.plex.tv") ||
 
-        host == "notebooklm.google.com" ||
-        host == "notebooklm.google" ||
+        host == "notebook.google.com" ||
+        host == "notebook.google" ||
         shExpMatch(host, "*.notebooklm.google.com") ||
 
         host == "gemini.google.com" ||
